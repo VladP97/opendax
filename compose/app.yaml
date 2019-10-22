@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   peatio:
-    image: "<%= @config['images']['peatio'] %>"
+    image: "rubykube/peatio:2.3.31"
     env_file:
       - ../config/peatio.env
     expose:
@@ -17,7 +17,7 @@ services:
     tty: true
 
   barong:
-    image: "<%= @config['images']['barong'] %>"
+    image: "barong_image:latest"
     env_file:
       - ../config/barong.env
     ports:
@@ -32,7 +32,7 @@ services:
     tty: true
 
   applogic:
-    image: "<%= @utils['images']['applogic'] %>"
+    image: "rubykube/applogic:latest"
     env_file:
       - ../config/applogic.env
     expose:
