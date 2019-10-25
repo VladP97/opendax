@@ -2,7 +2,7 @@ version: '3.6'
 
 services:
   peatio:
-    image: "rubykube/peatio:2.3.31"
+    image: "peatio_image:latest"
     env_file:
       - ../config/peatio.env
     expose:

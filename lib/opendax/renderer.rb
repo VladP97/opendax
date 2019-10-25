@@ -32,6 +32,12 @@ module Opendax
       @applogic_private_key ||= Base64.urlsafe_encode64(@applogic_key.to_pem)
       @applogic_public_key ||= Base64.urlsafe_encode64(@applogic_key.public_key.to_pem)
 
+      dotenv_variables = Hash[File.open('.env', 'r') { |file| file.read }.split("\n").map { |pair| pair.split('=') }]
+
+      @config['smtp']['user'] = dotenv_variables['EMAIL_USER']
+      @config['smtp']['sender_email'] = dotenv_variables['EMAIL_USER']
+      @config['smtp']['password'] = dotenv_variables['EMAIL_PASSWORD']
+
       result = ERB.new(File.read(file), 0, '-').result(binding)
       File.write(out_file, result)
     end

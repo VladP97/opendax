@@ -18,3 +18,5 @@ vendor/
 *.tfvars
 terraform.tfstate*
 !data/parity/.gitkeep
+
+.env
