@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../barong/.idea/barong.iml" filepath="$PROJECT_DIR$/../barong/.idea/barong.iml" />
+      <module fileurl="file://$USER_HOME$/barong/.idea/barong.iml" filepath="$USER_HOME$/barong/.idea/barong.iml" />
+      <module fileurl="file://$USER_HOME$/notification_service/.idea/notification_service.iml" filepath="$USER_HOME$/notification_service/.idea/notification_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/opendax.iml" filepath="$PROJECT_DIR$/.idea/opendax.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../peatio/.idea/peatio.iml" filepath="$PROJECT_DIR$/../peatio/.idea/peatio.iml" />
+      <module fileurl="file://$USER_HOME$/peatio/.idea/peatio.iml" filepath="$USER_HOME$/peatio/.idea/peatio.iml" />
     </modules>
   </component>
 </project>
