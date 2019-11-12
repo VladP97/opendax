@@ -78,7 +78,8 @@ license:
 
 #### Configure your Domain
 If using a VM you can point your domain name to the VM ip address before this stage.
-Recommended if you enabled SSL, for local development edit the `/etc/hosts`
+Recommended if you 
+enabled SSL, for local development edit the `/etc/hosts`
 
 
 Insert in file `/etc/hosts`
