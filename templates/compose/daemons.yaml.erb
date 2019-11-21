@@ -7,6 +7,8 @@ x-daemon: &peatio-daemon
     - ../config/peatio.env
   volumes:
     - ../config/peatio:/opt/peatio/config:ro
+  stdin_open: true
+  tty: true
 
 services:
   withdraw_audit:

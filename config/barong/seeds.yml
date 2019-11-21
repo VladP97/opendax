@@ -137,6 +137,7 @@ permissions:
  - { role: support, verb: all, path: admin, action: audit }
  - { role: support, verb: all, path: api/v2, action: audit }
  - { role: support, verb: all, path: api/v2/peatio/chat, action: accept }
+ - { role: support, verb: all, path: api/v2/peatio/user, action: accept }
 
 # TRADER
  # has standard user permissions to ACCOUNT, MARKET, RESOURCE modules
@@ -147,6 +148,7 @@ permissions:
  # ranger access
  - { role: trader, verb: get, path: api/v2/ranger, action: accept }
  - { role: trader, verb: all, path: api/v2/peatio/chat, action: accept }
+ - { role: trader, verb: all, path: api/v2/peatio/user, action: accept }
 
  # MEMBER
  # has standard user permissions to ACCOUNT, MARKET, RESOURCE modules
@@ -157,6 +159,7 @@ permissions:
  # ranger access
  - { role: member, verb: get, path: api/v2/ranger, action: accept }
  - { role: member, verb: all, path: api/v2/peatio/chat, action: accept }
+ - { role: member, verb: all, path: api/v2/peatio/user, action: accept }
 
  # BROKER
  # has standard user permissions to ACCOUNT, MARKET, RESOURCE modules
@@ -167,3 +170,4 @@ permissions:
  # ranger access
  - { role: broker, verb: get, path: api/v2/ranger, action: accept }
  - { role: broker, verb: all, path: api/v2/peatio/chat, action: accept }
+ - { role: broker, verb: all, path: api/v2/peatio/user, action: accept }
